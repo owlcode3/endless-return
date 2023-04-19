@@ -1,0 +1,31 @@
+.header {
+  @extend %center;
+  justify-content: space-around;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding: 2rem 0;
+}
+
+.logo-box {
+  width: 10rem;
+  height: 7rem;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+}
+
+.nav {
+  @extend %center;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.moon {
+  width: 9rem;
+  height: 3.5rem;
+  border: 2px solid $color-white;
+  border-radius: 200px;
+}
