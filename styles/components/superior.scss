@@ -1,2 +1,168 @@
 .superior {
+  background-color: $color-white;
+  width: 100%;
+}
+
+.superior__box {
+  background-color: $color-black;
+  margin: 0 auto;
+  width: 95%;
+  height: 100%;
+  padding: 8rem 10rem;
+}
+
+.superior__current {
+  @extend %center;
+  justify-content: space-between;
+  margin-bottom: 7rem;
+}
+
+.superior__superapp {
+  @extend %center;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 41rem;
+}
+
+.superior__features-box {
+  @extend %center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3rem;
+}
+
+.superior__superapp-box {
+  @extend %center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3rem;
+}
+
+.superior__one-name {
+  font-size: 3.2rem;
+  width: 35rem;
+  font-weight: 700;
+}
+
+.superior__assets-box {
+  @extend %center;
+  border-radius: 0.1rem;
+  width: 35rem;
+  height: 20rem;
+  color: $color-white;
+  border: 1px solid $color-white;
+}
+
+.superior__overall-box {
+  border-bottom: 1px solid $color-white;
+}
+
+.superior__overall-box,
+.superior__satisfied-box {
+  @extend %center;
+  flex-direction: column;
+  height: 50%;
+}
+
+.superior__number-big {
+  font-size: 3rem;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.superior__total {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+.superior__moving-forward {
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-style: italic;
+  display: block;
+  text-align: left;
+  width: 10.5rem;
+}
+
+.superior__asset-1 {
+  height: 100%;
+  width: 60%;
+}
+
+.superior__asset-2 {
+  @extend %center;
+  height: 100%;
+  width: 40%;
+  border-left: 1px solid $color-white;
+}
+
+.superior__card-img-box {
+  position: relative;
+}
+
+.superior__head-img {
+  width: 25rem;
+}
+
+.superior__card-img {
+  width: 22rem;
+}
+
+.superior__card-img--2 {
+  position: absolute;
+  left: -2.3rem;
+  top: 6.8rem;
+}
+
+.superior__features {
+  font-family: "Inter", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.superior__headings-box {
+  @extend %center;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.superior__heading {
+  @extend %center;
+}
+
+.superior__heading--2 {
+  height: 5rem;
+  overflow: hidden;
+}
+
+.superior__pad-img {
+  width: 8rem;
+  height: 7rem;
+}
+
+.superior__paragraph {
+  max-width: 48.2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  height: 5rem;
+}
+
+.superior__lists {
+  @extend %center;
+  justify-content: space-between;
+  list-style: none;
+  font-weight: 500;
+  font-size: 1.3rem;
+  width: 100%;
+  color: $color-black;
+}
+
+.superior__list {
+  @extend %center;
+  padding: 0.5rem 2rem;
+  background: $color-white;
+  border-radius: 50px;
 }
