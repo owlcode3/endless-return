@@ -1,0 +1,103 @@
+.footer {
+  width: 100%;
+}
+
+.footer__boxes {
+  width: 95%;
+  margin: 0 auto;
+  padding: 2rem 10rem;
+}
+
+.footer__box-1 {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  row-gap: 2rem;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 8rem;
+}
+
+.footer__box-2 {
+  display: grid;
+  grid-template-columns: 35% max-content;
+  justify-content: space-between;
+}
+
+.footer__join {
+  font-size: 3.6rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  justify-self: flex-start;
+}
+
+.footer__logo {
+  align-self: center;
+}
+
+.footer__exp {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.footer__medias {
+  list-style: none;
+}
+
+.footer__media {
+  display: grid;
+  grid-template-columns: 20% 70%;
+  justify-content: space-between;
+  height: 4rem;
+}
+
+.footer__media-name {
+  display: flex;
+  align-items: flex-end;
+  height: 3rem;
+  font-size: 1.2rem;
+  line-height: 1rem;
+}
+
+.footer__icon-box {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 29rem;
+  height: 3rem;
+  border-bottom: 1px solid $color-white;
+}
+
+.footer__icon {
+  width: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer__icon-arrow {
+  width: 2.1rem;
+}
+
+.footer__faqs {
+  @extend %center;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 3rem;
+  padding-bottom: 2rem;
+}
+
+.footer__faq {
+  @extend %center;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  font-weight: 800;
+  width: 20rem;
+  padding: 0 0.3rem 0.4rem 0.5rem;
+  border-bottom: 1px solid $color-white;
+}
+
+.footer__copyright {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: 1rem;
+}
