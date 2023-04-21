@@ -1,0 +1,34 @@
+.blog {
+  width: 100%;
+  background-color: $color-white;
+  padding: 2rem 0;
+}
+
+.blog__lists {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 20rem);
+  row-gap: 4rem;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.blog__list {
+  color: $color-black;
+}
+
+.blog__img {
+  width: 100%;
+}
+
+.blog__headline {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.blog__publish {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
