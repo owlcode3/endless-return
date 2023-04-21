@@ -1,9 +1,9 @@
 .brands {
+  @extend %center;
+  justify-content: space-around;
   background-color: $color-white;
   margin-top: -3.5rem;
   padding: 1rem 0;
-  @extend %center;
-  justify-content: space-around;
 }
 
 .brands__icon {

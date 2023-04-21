@@ -1,0 +1,124 @@
+.ecosystem {
+  position: relative;
+  background-color: $color-white;
+  width: 100%;
+}
+
+.ecosystem__blur {
+  position: absolute;
+  width: 30rem;
+  height: 30rem;
+  left: 78.7rem;
+  top: 17.4rem;
+  background-color: $color-white;
+  filter: blur(225px);
+  z-index: 0;
+}
+
+.ecosystem__boxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $color-black;
+  margin: 0 auto;
+  height: 41rem;
+  width: 95%;
+  padding: 3rem 10rem 1.5rem 10rem;
+}
+
+.ecosystem__box-1 {
+  @extend %center;
+  justify-content: space-between;
+}
+
+.ecosystem__box-2 {
+  position: relative;
+  height: 29rem;
+}
+
+.ecosystem__scale,
+.ecosystem__learn {
+  font-weight: 700;
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+.ecosystem__learn {
+  align-self: flex-start;
+}
+
+.ecosystem__card {
+  width: 40rem;
+}
+
+.ecosystem__card--1 {
+  position: absolute;
+  right: 34.7rem;
+  top: 5rem;
+  z-index: 0;
+}
+
+.ecosystem__card--2 {
+  position: absolute;
+  top: 2rem;
+  right: 29.6rem;
+  z-index: 1;
+}
+
+.ecosystem__card--3 {
+  position: absolute;
+  top: -3rem;
+  right: 26rem;
+  z-index: 2;
+}
+
+.ecosystem__earn-box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.ecosystem__yield {
+  font-size: 1.1rem;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.ecosystem__yield-number {
+  background: #3bb80f;
+  padding: 0.3rem 1.1rem;
+  border-radius: 50px;
+}
+
+.ecosystem__reward {
+  font-size: 3.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.ecosystem__blog {
+  background-color: $color-white;
+  height: 8rem;
+  width: 100%;
+  border-bottom: 2px solid #777777;
+}
+
+.ecosystem__links {
+  @extend %center;
+  justify-content: space-between;
+  height: 100%;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.ecosystem__link {
+  color: $color-black;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.ecosystem__link--2 {
+  color: #8f078a;
+}

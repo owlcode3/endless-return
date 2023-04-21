@@ -1,2 +1,51 @@
 .goodluck {
+  @extend %center;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: $color-white;
+  color: $color-black;
+  font-style: italic;
+  text-align: center;
+  padding: 2rem 0 3rem 0;
+}
+
+.goodluck__box {
+  @extend %center;
+  gap: 2rem;
+}
+
+.goodluck__heading {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.goodluck__paragraph {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: -3rem;
+}
+
+.goodluck__img-box {
+  @extend %center;
+  background-color: $color-black;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 20px;
+  padding: 1rem 0;
+}
+
+.goodluck__img {
+  width: 9rem;
+}
+
+.goodluck__img--2 {
+  width: 12rem;
+}
+
+.goodluck__benefits {
+  color: $color-white;
+  text-transform: uppercase;
+  font-size: 1.9rem;
 }

@@ -1,5 +1,5 @@
 .hero {
-  height: 57rem;
+  height: 57rem; //NOTE: change the height to nothing
   color: $color-white;
 }
 
@@ -81,6 +81,7 @@
   font-size: 10rem;
   display: block;
   line-height: 0.9;
+  text-align: center;
 }
 
 .hero__heading:not(:first-child) {
