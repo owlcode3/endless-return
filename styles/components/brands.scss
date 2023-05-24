@@ -2,18 +2,32 @@
   @extend %center;
   justify-content: space-around;
   background-color: $color-white;
-  margin-top: -3.5rem;
-  padding: 1rem 0;
+  // margin-top: -3.5rem;
+  padding: 2rem 0;
+  @include media("<=phone") {
+    padding: 2rem 1rem;
+    flex-wrap: wrap;
+    gap: 2rem 3rem;
+  }
 }
 
 .brands__icon {
   width: 14rem;
+  @include media("<=phone") {
+    width: 12rem;
+  }
 }
 
 .brands__icon--4th {
   width: 9rem;
+  @include media("<=phone") {
+    width: 8rem;
+  }
 }
 
 .brands__icon--5th {
   width: 10rem;
+  @include media("<=phone") {
+    width: 9rem;
+  }
 }

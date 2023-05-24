@@ -10,7 +10,9 @@
   },
   "devDependencies": {
     "sass": "^1.62.0",
-    "vite": "^4.2.0"
+    "vite": "^4.2.0"   ,
+     "include-media": "^2.0.0"
+
   },
   "dependencies": {
     "gsap": "^3.11.5"
