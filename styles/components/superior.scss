@@ -9,12 +9,24 @@
   width: 95%;
   height: 100%;
   padding: 8rem 10rem;
+  @include media("<=62.5em") {
+    // 1000px
+    padding: 5rem;
+  }
+  @include media("<=29.375em") {
+    // 470px
+    padding: 5rem 2rem;
+  }
 }
 
 .superior__current {
   @extend %center;
   justify-content: space-between;
   margin-bottom: 7rem;
+  @include media("<=50em") {
+    // 800px
+    justify-content: center;
+  }
 }
 
 .superior__superapp {
@@ -22,6 +34,14 @@
   justify-content: space-between;
   align-items: flex-start;
   height: 41rem;
+  @include media("<=50em") {
+    // 800px
+    flex-direction: column;
+    gap: 3rem;
+    height: auto;
+    align-items: center;
+    padding-bottom: 6rem;
+  }
 }
 
 .superior__features-box {
@@ -29,6 +49,15 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 3rem;
+  @include media("<=50em") {
+    // 800px
+    align-items: center;
+    gap: 2rem;
+  }
+  @include media("<=27.5em") {
+    // 440px
+    gap: 1rem;
+  }
 }
 
 .superior__superapp-box {
@@ -40,8 +69,16 @@
 
 .superior__one-name {
   font-size: 3.2rem;
-  width: 35rem;
+  max-width: 35rem;
   font-weight: 700;
+  @include media("<=50em") {
+    // 800px
+    text-align: center;
+  }
+  @include media("<=27.5em") {
+    // 440px
+    font-size: 2rem;
+  }
 }
 
 .superior__assets-box {
@@ -51,6 +88,12 @@
   height: 20rem;
   color: $color-white;
   border: 1px solid $color-white;
+  @include media("<=27.5em") {
+    // 440px
+    width: 95%;
+    height: 22rem;
+    margin: 0 auto;
+  }
 }
 
 .superior__overall-box {
@@ -62,6 +105,13 @@
   @extend %center;
   flex-direction: column;
   height: 50%;
+}
+
+.superior__satisfied-box {
+  @include media("<=27.5em") {
+    // 440px
+    text-align: center;
+  }
 }
 
 .superior__number-big {
@@ -88,6 +138,10 @@
 .superior__asset-1 {
   height: 100%;
   width: 60%;
+  @include media("<=27.5em") {
+    // 440px
+    width: 58%;
+  }
 }
 
 .superior__asset-2 {
@@ -95,14 +149,30 @@
   height: 100%;
   width: 40%;
   border-left: 1px solid $color-white;
+  @include media("<=27.5em") {
+    // 440px
+    width: 42%;
+    padding: 0 0.5rem;
+  }
 }
 
 .superior__card-img-box {
   position: relative;
 }
 
+.superior__head-img-box {
+  @include media("<=50em") {
+    // 800px
+    display: none;
+  }
+}
+
 .superior__head-img {
   width: 25rem;
+  @include media("<=62.5em") {
+    // 1000px
+    width: 80%;
+  }
 }
 
 .superior__card-img {
@@ -127,6 +197,14 @@
   align-items: flex-start;
   font-size: 3rem;
   font-weight: 700;
+  @include media("<=50em") {
+    // 800px
+    align-items: center;
+  }
+  @include media("<=27.5em") {
+    // 440px
+    font-size: 2rem;
+  }
 }
 
 .superior__heading {
@@ -141,6 +219,11 @@
 .superior__pad-img {
   width: 8rem;
   height: 7rem;
+  @include media("<=27.5em") {
+    // 440px
+    width: 6rem;
+    height: 5rem;
+  }
 }
 
 .superior__paragraph {
@@ -148,16 +231,28 @@
   font-size: 1.2rem;
   font-weight: 500;
   height: 5rem;
+  @include media("<=50em") {
+    // 800px
+    text-align: center;
+    height: auto;
+  }
 }
 
 .superior__lists {
   @extend %center;
   justify-content: space-between;
+  gap: 2rem;
   list-style: none;
   font-weight: 500;
   font-size: 1.3rem;
   width: 100%;
   color: $color-black;
+  @include media("<=50em") {
+    // 800px
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
 }
 
 .superior__list {
