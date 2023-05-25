@@ -1,11 +1,18 @@
 .footer {
   width: 100%;
+  background-color: $color-white;
+  padding-top: 4rem;
+  @extend %center;
 }
 
 .footer__boxes {
+  background-color: $background;
   width: 95%;
-  margin: 0 auto;
-  padding: 2rem 10rem;
+  padding: 3rem;
+  @include media("<=43.125em") {
+    // 690px
+    padding: 0.5rem 1.5rem;
+  }
 }
 
 .footer__box-1 {
@@ -15,12 +22,26 @@
   justify-content: space-between;
   width: 100%;
   margin-bottom: 8rem;
+  @include media("<=43.125em") {
+    // 690px
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 4rem;
+  }
 }
 
 .footer__box-2 {
   display: grid;
-  grid-template-columns: 35% max-content;
+  grid-template-columns: 60% min-content;
   justify-content: space-between;
+  gap: 5rem;
+  @include media("<=43.125em") {
+    // 690px
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .footer__join {
@@ -29,19 +50,38 @@
   text-transform: uppercase;
   text-align: center;
   justify-self: flex-start;
+  @include media("<=43.125em") {
+    // 690px
+    order: 1;
+    text-align: left;
+  }
 }
 
 .footer__logo {
   align-self: center;
+  @include media("<=43.125em") {
+    // 690px
+    align-self: flex-start;
+    order: 0;
+  }
 }
 
 .footer__exp {
   font-size: 1rem;
   font-weight: 500;
+  max-width: 34rem;
+  @include media("<=43.125em") {
+    // 690px
+    order: 2;
+  }
 }
 
 .footer__medias {
   list-style: none;
+  @include media("<=43.125em") {
+    // 690px
+    width: 100%;
+  }
 }
 
 .footer__media {
@@ -49,6 +89,19 @@
   grid-template-columns: 20% 70%;
   justify-content: space-between;
   height: 4rem;
+  gap: 3rem;
+  width: 80%;
+  cursor: pointer;
+  @include media("<=43.125em") {
+    // 690px
+    width: 50%;
+    display: flex;
+    gap: 2rem;
+  }
+  @include media("<=37.5em") {
+    // 600px
+    width: 100%;
+  }
 }
 
 .footer__media-name {
@@ -57,6 +110,14 @@
   height: 3rem;
   font-size: 1.2rem;
   line-height: 1rem;
+  @include media("<=43.125em") {
+    // 690px
+    width: 20%;
+  }
+  @include media("<=37.5em") {
+    // 600px
+    width: 7rem;
+  }
 }
 
 .footer__icon-box {
@@ -66,6 +127,14 @@
   width: 29rem;
   height: 3rem;
   border-bottom: 1px solid $color-white;
+  @include media("<=43.125em") {
+    // 690px
+    width: 70%;
+  }
+  @include media("<=37.5em") {
+    // 600px
+    width: 80%;
+  }
 }
 
 .footer__icon {
@@ -84,6 +153,10 @@
   justify-content: flex-end;
   gap: 3rem;
   padding-bottom: 2rem;
+  @include media("<=43.125em") {
+    // 690px
+    width: 100%;
+  }
 }
 
 .footer__faq {
@@ -94,6 +167,15 @@
   width: 20rem;
   padding: 0 0.3rem 0.4rem 0.5rem;
   border-bottom: 1px solid $color-white;
+  cursor: pointer;
+  @include media("<=43.125em") {
+    // 690px
+    width: 30%;
+  }
+  @include media("<=37.5em") {
+    // 600px
+    width: 80%;
+  }
 }
 
 .footer__copyright {
