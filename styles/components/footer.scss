@@ -3,6 +3,10 @@
   background-color: $color-white;
   padding-top: 4rem;
   @extend %center;
+  @include media("<=43.125em") {
+    // 690px
+    padding-bottom: 2rem;
+  }
 }
 
 .footer__boxes {
