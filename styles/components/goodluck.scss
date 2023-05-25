@@ -6,12 +6,25 @@
   color: $color-black;
   font-style: italic;
   text-align: center;
-  padding: 2rem 0 3rem 0;
+  padding: 5rem 2rem 3rem 2rem;
+  @include media("<=26.25em") {
+    // 420px
+    padding: 5rem 1rem 3rem 1rem;
+  }
 }
 
 .goodluck__box {
   @extend %center;
   gap: 2rem;
+  padding-top: 1rem;
+}
+
+.goodluck__what {
+  font-style: italic;
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: center;
+  color: #3bb80f;
 }
 
 .goodluck__heading {
@@ -34,6 +47,10 @@
   height: 20rem;
   border-radius: 20px;
   padding: 1rem 0;
+  @include media("<=26.25em") {
+    // 420px
+    width: 15rem;
+  }
 }
 
 .goodluck__img {
