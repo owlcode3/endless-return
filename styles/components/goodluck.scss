@@ -6,10 +6,10 @@
   color: $color-black;
   font-style: italic;
   text-align: center;
-  padding: 5rem 2rem 3rem 2rem;
+  padding: 5rem 2rem 5rem 2rem;
   @include media("<=26.25em") {
     // 420px
-    padding: 5rem 1rem 3rem 1rem;
+    padding: 5rem 1rem 6rem 1rem;
   }
 }
 
@@ -17,6 +17,10 @@
   @extend %center;
   gap: 2rem;
   padding-top: 1rem;
+  @include media("<=20.625em") {
+    // 330px
+    flex-direction: column;
+  }
 }
 
 .goodluck__what {
